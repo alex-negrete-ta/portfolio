@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A L E X &nbsp; N E G R E T E</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <p class="site-name" onclick="showPage('home')">A L E X &nbsp; N E G R E T E</p>
+  </header>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <ul>
+      <li><a id="nav-home" onclick="showPage('home')">Home</a></li>
+      <li><a id="nav-tech-art" onclick="showPage('tech-art')">Technical Art</a></li>
+      <li><a id="nav-env-art" onclick="showPage('env-art')">Environment Art</a></li>
+      <li><a id="nav-production" onclick="showPage('production')">Production</a></li>
+      <li><a id="nav-about" onclick="showPage('about')">About</a></li>
+      <li><a id="nav-contact" onclick="showPage('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HOME
+  ═══════════════════════════════════════════ -->
+  <section class="page active" id="page-home">
+    <div class="home-hero">
+      <iframe
+        src="https://player.vimeo.com/video/1127394675?autoplay=1&loop=1&muted=1&background=1"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TECHNICAL ART
+  ═══════════════════════════════════════════ -->
+  <section class="page" id="page-tech-art">
+    <div class="tool-list">
+      <div class="tool-item">
+        <div class="tool-item__name"><a href="https://github.com/alex-negrete-ta/nuke_show_setup_manager" target="_blank" rel="noopener">Nuke Show Setup Manager ↗</a></div>
+        <p class="tool-item__desc">Automates per-show Nuke environment configuration — read paths, write paths, and colour management from a single config file. Removes the manual setup step at the start of every project.</p>
+        <span class="tool-item__meta">Python · Nuke</span>
+      </div>
+
+      <div class="tool-item">
+        <div class="tool-item__name"><a href="https://github.com/alex-negrete-ta/Maya-to-Nuke-Multipass-Composite" target="_blank" rel="noopener">Maya → Nuke Render Script ↗</a></div>
+        <p class="tool-item__desc">One-click multipass export from Maya with auto-generated Nuke comp networks for each render layer. Cuts the hand-off between lighting and comp to near zero.</p>
+        <span class="tool-item__meta">Python · Maya · Nuke</span>
+      </div>
+
+      <div class="tool-item">
+        <div class="tool-item__name"><a href="https://github.com/alex-negrete-ta/Modeling_Publisher_maya" target="_blank" rel="noopener">Modeling Publisher ↗</a></div>
+        <p class="tool-item__desc">Validates, cleans, and publishes geometry from Maya into the asset pipeline with metadata baked in. Enforces naming conventions and UV requirements before anything reaches the server.</p>
+        <span class="tool-item__meta">Python · Maya</span>
+      </div>
+
+      <div class="tool-item">
+        <div class="tool-item__name"><a href="https://github.com/alex-negrete-ta/Maya-Tools" target="_blank" rel="noopener">Wobble — Procedural Animation Tool ↗</a></div>
+        <p class="tool-item__desc">PySide2 panel that adds physics-based secondary motion to any object. Frequency, amplitude, and damping controls let animators dial in the feel without touching the graph editor.</p>
+        <span class="tool-item__meta">Python · PySide2 · Maya</span>
+      </div>
+
+      <div class="tool-item">
+        <div class="tool-item__name"><a href="https://github.com/alex-negrete-ta/maya_rename_tool" target="_blank" rel="noopener">Asset Rename Tool ↗</a></div>
+        <p class="tool-item__desc">Batch-rename nodes and file paths across a Maya scene using prefix, suffix, and search-replace rules. Keeps naming consistent across every department hand-off.</p>
+        <span class="tool-item__meta">Python · Maya</span>
+      </div>
+
+      <div class="tool-item">
+        <div class="tool-item__name"><a href="https://github.com/alex-negrete-ta/scorer" target="_blank" rel="noopener">Software &amp; Hardware Dev ↗</a></div>
+        <p class="tool-item__desc">Custom scorer hardware and firmware — combines physical I/O with a production-facing software interface. Built for a live-event production context where off-the-shelf solutions didn't exist.</p>
+        <span class="tool-item__meta">Python · Hardware · Firmware</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ENVIRONMENT ART
+  ═══════════════════════════════════════════ -->
+  <section class="page" id="page-env-art">
+    <div class="gallery">
+
+        <a class="project" href="https://www.artstation.com/artwork/rlaowG" target="_blank" rel="noopener">
+            <div class="project__img">
+                <img src="images/betty.png" alt="Photorealistic Modular Environment" />
+            </div>
+            <p class="project__title">Betty Environment</p>
+            <p class="project__sub">Unreal Engine · Substance Painter · Substance Designer · ZBrush · Maya</p>
+        </a>
+
+        <a class="project" href="https://www.artstation.com/artwork/Ezbmmq" target="_blank" rel="noopener">
+            <div class="project__img">
+                <img src="images/renderman2025.png" alt="Photorealistic Modular Environment" />
+            </div>
+            <p class="project__title">Renderman 2025</p>
+            <p class="project__sub">Blender · Substance Painter · Renderman</p>
+        </a>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PRODUCTION — RESUME
+  ═══════════════════════════════════════════ -->
+  <section class="page" id="page-production">
+    <div class="resume">
+      <div class="resume__header">
+        <p class="resume__name">Alex Negrete</p>
+        <p class="resume__contact-line">
+          <a href="mailto:luisalejandro.nehe@gmail.com">luisalejandro.nehe@gmail.com</a>
+          &nbsp;·&nbsp;
+          <a href="http://www.linkedin.com/in/alex-negrete-vfx" target="_blank" rel="noopener">linkedin.com/in/alex-negrete-vfx ↗</a>
+        </p>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="resume-section">
+        <p class="resume-section__label">Summary</p>
+        <div class="resume-entry" style="border-top: none; padding-top: 0;">
+          <p style="font-size:16px; color:#444; line-height:1.75;">
+            Production Coordinator with 4+ years coordinating teams, managing large asset libraries, providing administrative support, and navigating new tools quickly in fast-paced environments. Driven to grow in gaming and learn from the best producers and game developers in the world.
+          </p>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="resume-section">
+        <p class="resume-section__label">Experience</p>
+
+        <div class="resume-entry">
+          <div class="resume-entry__top">
+            <span class="resume-entry__title">Community Moderator &amp; Live Events Coordinator</span>
+            <span class="resume-entry__date">2026 – Present</span>
+          </div>
+          <p class="resume-entry__org">The Rookies</p>
+          <ul class="resume-entry__bullets">
+            <li>Cultivate and scale a 3,800+ member Discord community, moderating content and producing live-streamed content for the Rookies Live platform.</li>
+            <li>Coordinate logistics and setups for recurring broadcast sessions with external guests.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__top">
+            <span class="resume-entry__title">Key Production Assistant &amp; Coordinator</span>
+            <span class="resume-entry__date">Dec 2022 – Dec 2025</span>
+          </div>
+          <p class="resume-entry__org">Bindery / NuBoom (Freelance)</p>
+          <ul class="resume-entry__bullets">
+            <li>Managed 200+ digital and print assets, oversaw file transfer, tracked assets, and archived art assets.</li>
+            <li>Coordinated commercial shoots for Sephora, UCLA, and independent artists — logistics, scheduling, call sheets, shot lists, and travel and expense coordination for executives.</li>
+            <li>Captured and distributed meeting agendas and production notes to department heads.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__top">
+            <span class="resume-entry__title">Technical Pipeline Artist &amp; Compositing Lead</span>
+            <span class="resume-entry__date">Jan 2024 – Dec 2025</span>
+          </div>
+          <p class="resume-entry__org">Studio X</p>
+          <ul class="resume-entry__bullets">
+            <li>Facilitated communication with compositor leads and producers to increase efficiency and resolve bottlenecks.</li>
+            <li>Guided compositors and tracked progress in ShotGrid, escalating concerns and implementing solutions to ensure delivery on time and on budget.</li>
+            <li>Diagnosed and resolved script errors and shot kickbacks under tight deadlines in a 10+ person production environment.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__top">
+            <span class="resume-entry__title">Production Assistant</span>
+            <span class="resume-entry__date">Jun 2022 – Aug 2022</span>
+          </div>
+          <p class="resume-entry__org">Oddbot Inc.</p>
+          <ul class="resume-entry__bullets">
+            <li>Migrated 500+ art department assets from a pilot database into FileMaker for series production, creating a reliable and searchable archive.</li>
+            <li>Assembled daily production packets and presentations for executives and overseas studios.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__top">
+            <span class="resume-entry__title">Financial Aid Assistant</span>
+            <span class="resume-entry__date">Sep 2018 – Apr 2022</span>
+          </div>
+          <p class="resume-entry__org">Columbia College Hollywood</p>
+          <ul class="resume-entry__bullets">
+            <li>Maintained confidential student records and ensured accurate documentation for FAFSA applications and financial aid reviews.</li>
+            <li>Reviewed and audited application documents for errors, supporting compliance and student outcomes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="resume-section">
+        <p class="resume-section__label">Skills</p>
+        <div class="resume__skills-grid">
+          <div class="resume__skill-row">
+            <span class="resume__skill-label">Project Mgmt</span>
+            <span class="resume__skill-val">Excel, Google Workspace, Slack, ShotGrid, Jira, Notion, Microsoft Office, FileMaker, Movie Magic Budgeting</span>
+          </div>
+          <div class="resume__skill-row">
+            <span class="resume__skill-label">Creative Tools</span>
+            <span class="resume__skill-val">Final Draft, Storyboard Pro, Photoshop, Maya, Nuke, Substance, After Effects, Premiere, Blender</span>
+          </div>
+          <div class="resume__skill-row">
+            <span class="resume__skill-label">Strengths</span>
+            <span class="resume__skill-val">Production Operations, Scheduling, Budget Tracking, Quality Control, Asset Management, Communication, Attention to Detail</span>
+          </div>
+          <div class="resume__skill-row">
+            <span class="resume__skill-label">Languages</span>
+            <span class="resume__skill-val">English, Spanish</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="resume-section">
+        <p class="resume-section__label">Education</p>
+        <div class="resume-entry">
+          <div class="resume-entry__top">
+            <span class="resume-entry__title">M.A., Visual Effects &amp; Animation</span>
+            <span class="resume-entry__date">2024 – 2025</span>
+          </div>
+          <p class="resume-entry__org">Academy of Art University</p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry__top">
+            <span class="resume-entry__title">B.F.A., Cinematography and Film Directing</span>
+            <span class="resume-entry__date">2018 – 2022</span>
+          </div>
+          <p class="resume-entry__org">Columbia College Hollywood</p>
+        </div>
+      </div>
+
+      <!-- AFFILIATIONS -->
+      <div class="resume-section">
+        <p class="resume-section__label">Affiliations</p>
+        <div class="resume-entry" style="border-top:none; padding-top:0;">
+          <p class="resume__affil">
+            Adobe Substance Student Ambassador (2025)<br>
+            Group Effort Initiative (2022 – present)<br>
+            LatinX in Animation (2019 – present)<br>
+            Asians in Animation (2021 – present)<br>
+            SIGGRAPH (2020 – present)
+          </p>
+        </div>
+      </div>
+
+      <a class="resume__download" href="Alex_Negrete_temp.pdf" download>Download PDF ↓</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="page" id="page-about">
+    <div class="about">
+      <div class="about__grid">
+        <!-- PROFILE PHOTO CONTAINER -->
+        <div class="about__photo">
+        <!-- Swap the filename below with your actual photo file name -->
+        <img src="images/alex.jpg" alt="Alex Negrete Portrait" />
+        </div>
+        <div class="about__text">
+          <h2>About</h2>
+          <p>I'm Alex Negrete — a TA/TD, Production Coordinator, and Environment Artist. My background spans live-action and CG workflows, from asset management and pipeline development through to final comp.</p>
+          <p>I specialize in the connective tissue of a production: the tools and project structures that let artists move work cleanly across departments without friction.</p>
+          <p>Compositing lead on feature and short films, part of the second cohort of Substance Ambassadors by Adobe, and experienced in coordinating commercial productions for clients including Sephora and UCLA.</p>
+          <p>Always looking for the next problem an artist shouldn't have to solve twice.</p>
+        </div>
+      </div>
+
+      <div class="skills-block">
+        <h3>Proficiencies</h3>
+        <p class="skills-label">3D / VFX</p>
+        <div class="skills-row">
+          <span class="skill">Maya</span><span class="skill">Nuke</span><span class="skill">Houdini</span><span class="skill">Blender</span><span class="skill">Unreal Engine</span><span class="skill">Substance</span><span class="skill">Renderman</span><span class="skill">Arnold</span><span class="skill">After Effects</span><span class="skill">Premiere</span>
+        </div>
+        <p class="skills-label">Pipeline &amp; Production</p>
+        <div class="skills-row">
+          <span class="skill">Python</span><span class="skill">PySide2</span><span class="skill">ShotGrid</span><span class="skill">Jira</span><span class="skill">Notion</span><span class="skill">FileMaker</span><span class="skill">Google Workspace</span><span class="skill">Movie Magic</span>
+        </div>
+        <p class="skills-label">Languages</p>
+        <div class="skills-row">
+          <span class="skill">English</span><span class="skill">Spanish</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="page" id="page-contact">
+    <div class="contact">
+      <h2>Contact</h2>
+      <div class="contact-row"><span class="contact-label">Email</span><a href="mailto:luisalejandro.nehe@gmail.com">luisalejandro.nehe@gmail.com</a></div>
+      <div class="contact-row"><span class="contact-label">LinkedIn</span><a href="http://www.linkedin.com/in/alex-negrete-vfx" target="_blank" rel="noopener">alex-negrete-vfx ↗</a></div>
+      <div class="contact-row"><span class="contact-label">GitHub</span><a href="https://github.com/alex-negrete-ta" target="_blank" rel="noopener">alex-negrete-ta ↗</a></div>
+      <div class="contact-row"><span class="contact-label">ArtStation</span><a href="https://www.artstation.com/alexnegrete" target="_blank" rel="noopener">alexnegrete ↗</a></div>
+      <div class="contact-row"><span class="contact-label">Instagram</span><a href="https://www.instagram.com/luis_alejandro.nehe/" target="_blank" rel="noopener">@luis_alejandro.nehe ↗</a></div>
+    </div>
+  </section>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
